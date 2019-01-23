@@ -1,1 +1,95 @@
+Question 1
+When defining our own class, we should provide one or more constructor methods. If we fail to provide one, the compiler will generate 
+a default one that takes 1 parameter(s).
+Answer 1:
+Correct!
+constructor
+Answer 2:
+Correct Answer:
+0
+This is correct because there is a default feature for most of the syntax and this is one of them.
 
+Question 2
+In order to implement the toString method, what annotation do you need to include?
+Correct Answer
+@Override
+Using the annotation @Override informs the compiler that the element is meant to override an element declared in a superclass, 
+while using the annotation @Private indicates that the constructor is private.
+
+Question 3
+Consider the following partial class definition.
+
+public class Quiz {
+
+    private int numberOfQuestions;
+    private String instructionalUnit;
+
+    public Quiz() {
+
+    }
+}
+numberOfQuestions and instructionalUnit are examples of...?
+Correct Answer
+instance variables
+They are variables that are being deliberately altered during a specific instance.
+
+Question 4
+From a classification perspective, a setter method is a(n)...?
+Correct Answer
+  mutator
+  This is correct because a setter allows that manipulation of classes.
+  
+  
+Question 8
+Consider the following partially implemented class.
+
+public class Quiz {
+
+    private static int id = 1;
+    private int questionCount;
+
+    public Quiz(int questionCount) {
+        this.questionCount = questionCount;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void incrementId() {
+        id++;
+    }
+
+    public int getQuestionCount() {
+        return questionCount;
+    }
+}
+Now, consider the following usage of the aforementioned class.
+
+Quiz q1 = new Quiz(10);
+Quiz q2 = new Quiz(15);
+q2.incrementId();
+
+System.out.println(q1.getId());
+System.out.println(q2.getId());
+System.out.println(q1.getQuestionCount());
+System.out.println(q2.getQuestionCount());
+What will be printed to the console?
+Correct Answer
+  
+2
+2
+10
+15
+These are the correct answers as 2 is the id number of both quizzes, but quiz 2 has 10 questions with the other having 15.
+
+Question 9
+In most cases, programmers provide a   method to access the values of their instance variables from other classes. Likewise, 
+they provide a  method to update the values of their instance variables from other classes.
+Answer 1:
+Correct Answer
+getter 
+Answer 2:
+Correct Answer
+setter 
+These are correct as tehy fill the requirements of the question??
